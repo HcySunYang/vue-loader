@@ -94,6 +94,7 @@ export default function loader(
   const { descriptor, errors } = parse(source, {
     filename,
     sourceMap,
+    pad: 'line',
   })
 
   // cache descriptor
